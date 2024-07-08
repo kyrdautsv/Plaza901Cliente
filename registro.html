@@ -60,6 +60,13 @@
             padding: 20px;
             /* Ajusta el relleno para que el formulario se vea más ancho */
         }
+
+        .modal-dialog-centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
     </style>
 </head>
 <!-- body -->
@@ -135,27 +142,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <form id="request" class="main_form" onsubmit="showAlert(event)">
+                    <form id="request" class="main_form" onsubmit="showModal(event)">
                         <div class="row">
                             <div class="col-md-12 ">
                                 <h3>Registro De Emprendedor</h3>
                             </div>
                             <div class="col-md-12 ">
-                                <input class="registro" placeholder="Nombre del Negocio" type="type" name="Name">
+                                <input class="registro" placeholder="Nombre del Negocio" type="text" name="Name">
                             </div>
                             <div class="col-md-12">
-                                <input class="registro" placeholder="Numero de Teléfono" type="type"
+                                <input class="registro" placeholder="Numero de Teléfono" type="text"
                                     name="Phone Number">
                             </div>
                             <div class="col-md-12">
-                                <input class="registro" placeholder="Descripción" type="type" name="Descripcion">
+                                <input class="registro" placeholder="Descripción" type="text" name="Descripcion">
                             </div>
                             <div class="col-md-12">
-                                <input class="registro" placeholder="Ubicación" type="type" name="Ubicacion">
+                                <input class="registro" placeholder="Ubicación" type="text" name="Ubicacion">
                             </div>
                             <div class="col-md-12">
                                 <button class="send_btn" type="submit">Registrar</button>
-                              
                             </div>
                         </div>
                     </form>
@@ -163,6 +169,28 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Registro Exitoso</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="successModalBody">
+                    <!-- El mensaje de éxito se insertará aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- end register section -->
     <!-- footer -->
     <footer>
@@ -200,6 +228,21 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+        function showModal(event) {
+            event.preventDefault(); // Prevenir el envío del formulario
+
+            // Obtener el nombre del negocio
+            var nombreNegocio = document.querySelector('input[name="Name"]').value;
+
+            // Insertar el mensaje en el cuerpo del modal
+            document.getElementById('successModalBody').textContent = 'Felicidades ' + nombreNegocio + ', has sido registrado con éxito';
+
+            // Mostrar el modal
+            $('#successModal').modal('show');
+        }
+    </script>
 
 </body>
 
