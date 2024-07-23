@@ -48,61 +48,9 @@
     <!-- end loader -->
     <!-- header -->
     <header>
-        <!-- header inner -->
-        <div class="header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                        <div class="full">
-                            <div class="center-desk">
-                                <div class="logo">
-                                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarsExample04">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="glasses.html">Our Glasses</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="shop.html">Shop</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li class="nav-item d_none login_btn">
-                                        <a class="nav-link" href="login.html">Login</a>
-                                    </li>
-                                    <li class="nav-item d_none">
-                                        <a class="nav-link" href="register.html">Register</a>
-                                    </li>
-                                    <li class="nav-item d_none sea_icon">
-                                        <a class="nav-link" href="#"><i class="fa fa-shopping-bag"
-                                                aria-hidden="true"></i><i class="fa fa-search"
-                                                aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        include 'nav.php';
+        ?>
     </header>
     <!-- end header inner -->
     <!-- end header -->
@@ -114,8 +62,8 @@
                     <div class="card" style="border-radius: 1rem;">
                         <div class="row g-0">
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                <img src="./images/shop_img.png" alt="login form" class="img-fluid"
-                                    style="border-radius: 1rem 0 0 1rem;" />
+                                <img src="./images/centro-comercial1.jpg" alt="login form" class="img-fluid"
+                                    style="border-radius: 1rem 1rem 1rem 1rem;" />
                             </div>
                             <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                 <div class="card-body p-4 p-lg-5 text-black">
