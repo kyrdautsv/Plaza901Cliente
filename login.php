@@ -99,7 +99,7 @@
 
                                         <a class="small text-muted" href="#!">¿Olvidaste Tu Contraseña?</a>
                                         <p class="mb-5 pb-lg-2" style="color: #393f81;">¿Aún No Tienes Cuenta? <a
-                                                href="register.html" style="color: #393f81;">Registrate Aqui</a></p>
+                                                href="register.php" style="color: #393f81;">Registrate Aqui</a></p>
                                     </form>
 
                                 </div>
