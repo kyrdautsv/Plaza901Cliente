@@ -26,6 +26,9 @@
                         <li class="nav-item active">
                            <a class="nav-link" href="about.php">Acerca De</a>
                         </li>
+                        <li class="nav-item active">
+                           <a class="nav-link" href="usuarios.php">Usuarios</a>
+                        </li>
                         <li class="nav-item">
                            <a class="nav-link" href="glasses.html">Carrito</a>
                         </li>
