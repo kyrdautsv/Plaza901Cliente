@@ -30,7 +30,6 @@
    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    <style>
       body {
-         background-color:; /* Color de fondo */
          background-image: url('https://wallpapercrafter.com/desktop/81442-city-artist-artwork-digital-art-hd-minimalism-minimalist.jpg'); /* Puedes añadir una imagen de fondo si lo deseas */
          background-size: cover;
          background-position: center;
