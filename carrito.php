@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,72 +16,27 @@
          background-color: #fff;
          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
+
       .cart-item img {
          width: 100%;
          height: auto;
          border-radius: 10px;
       }
-      .cart-item h4, .cart-item p {
+
+      .cart-item h4,
+      .cart-item p {
          margin: 10px 0;
       }
    </style>
 </head>
+
 <body>
    <header>
-      <div class="header">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                  <div class="full">
-                     <div class="center-desk">
-                        <div class="logo">
-                           <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <div class="collapse navbar-collapse" id="navbarsExample04">
-                        <ul class="navbar-nav mr-auto">
-                           <li class="nav-item active">
-                              <a class="nav-link" href="index.html">Home</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="about.html">About</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="glasses.html">Glasses</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="shop.html">Shop</a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="contact.html">Contacto</a>
-                           </li>
-                           <li class="nav-item d_none">
-                              <a class="nav-link" href="carrito.html">Carrito <br><img src="images/carrito.jpg" alt="" style="width: 10%;"></a>
-                           </li>
-                           <li class="nav-item d_none login_btn">
-                              <a class="nav-link" href="#">Login</a>
-                           </li>
-                           <li class="nav-item d_none">
-                              <a class="nav-link" href="#">Registro</a>
-                           </li>
-                           <li class="nav-item d_none sea_icon">
-                              <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
-                           </li>
-                        </ul>
-                     </div>
-                  </nav>
-               </div>
-            </div>
-         </div>
-      </div>
+      <?php
+      include 'nav.php';
+      ?>
    </header>
+
    <div class="container mt-5" style="padding-top: 10%;">
       <div class="container">
          <div class="row">
@@ -123,7 +79,7 @@
    </footer>
    <script src="js/jquery.min.js"></script>
    <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
          let cart = JSON.parse(localStorage.getItem('cart')) || [];
          let cartItemsContainer = $('#cartItems');
          let totalAmountContainer = $('#totalAmount');
@@ -138,7 +94,7 @@
             if (cart.length === 0) {
                cartItemsContainer.html('<p>El carrito está vacío</p>');
             } else {
-               cart.forEach(function(item, index) {
+               cart.forEach(function (item, index) {
                   cartItemsContainer.append(`
                      <div class="col-md-4">
                         <div class="cart-item" data-index="${index}">
@@ -159,14 +115,14 @@
 
          updateCartDisplay();
 
-         $(document).on('click', '.remove-item', function() {
+         $(document).on('click', '.remove-item', function () {
             let indexToRemove = $(this).closest('.cart-item').data('index');
             cart.splice(indexToRemove, 1);
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartDisplay();
          });
 
-         $(document).on('change', '.quantity', function() {
+         $(document).on('change', '.quantity', function () {
             let index = $(this).data('index');
             let newQuantity = parseInt($(this).val());
             if (newQuantity < 1) {
@@ -178,7 +134,7 @@
             updateCartDisplay();
          });
 
-         $('#payButton').click(function() {
+         $('#payButton').click(function () {
             let soldProducts = JSON.parse(localStorage.getItem('soldProducts')) || [];
             soldProducts = soldProducts.concat(cart);
             localStorage.setItem('soldProducts', JSON.stringify(soldProducts));
@@ -191,4 +147,5 @@
       });
    </script>
 </body>
+
 </html>
