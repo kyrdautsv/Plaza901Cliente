@@ -42,10 +42,10 @@
                            <a class="nav-link" href="contact.php">Contactanos</a>
                         </li>
                         <li class="nav-item d_none login_btn">
-                           <a class="nav-link" href="login.html">Login</a>
+                           <a class="nav-link" href="login.php">Login</a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="register.html">Register</a>
+                           <a class="nav-link" href="register.php">Register</a>
                         </li>
                         <li class="nav-item d_none sea_icon">
                            <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i
