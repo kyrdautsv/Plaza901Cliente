@@ -14,8 +14,7 @@
             </div>
             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-                     aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarsExample04">
@@ -44,15 +43,17 @@
                         <li class="nav-item">
                            <a class="nav-link" href="contact.php">Contactanos</a>
                         </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="carrito.php">Carrito</a>
+                        </li>
                         <li class="nav-item d_none login_btn">
-                           <a class="nav-link" href="login.html">Login</a>
+                           <a class="nav-link" href="login.php">Login</a>
                         </li>
                         <li class="nav-item d_none">
-                           <a class="nav-link" href="register.html">Register</a>
+                           <a class="nav-link" href="register.php">Register</a>
                         </li>
                         <li class="nav-item d_none sea_icon">
-                           <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i
-                                 class="fa fa-search" aria-hidden="true"></i></a>
+                           <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
                         </li>
                      </ul>
                   </div>
