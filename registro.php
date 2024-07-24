@@ -34,17 +34,16 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            margin: 0;
         }
 
         .main-layout {
             flex: 1;
+        }
+
+        .registro {
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-
-        .register {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
@@ -52,8 +51,6 @@
             max-width: 500px;
             width: 100%;
             margin: 20px auto; /* Added margin to avoid overlap with the footer */
-            display: flex;
-            justify-content: center;
         }
 
         .main_form {
@@ -65,14 +62,29 @@
             max-width: 600px;
             width: 100%;
             padding: 20px;
-            border: 1px solid #007bff;
-            border-radius: 4px;
-            background-color: transparent;
-            color: #007bff;
         }
 
-        .registro::placeholder {
-            color: #007bff;
+        .registro input[type="text"] {
+            background-color: #ffffff;
+            border: 2px solid #007bff;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .send_btn {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
         }
 
         .modal-dialog-centered {
@@ -81,7 +93,6 @@
             justify-content: center;
             height: 100vh;
         }
-
 
         footer {
             background-color: #f1f1f1;
@@ -110,7 +121,7 @@
     <div id="registro" class="registro">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <form id="request" class="main_form" onsubmit="showModal(event)">
                         <div class="row">
                             <div class="col-md-12">
