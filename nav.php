@@ -34,8 +34,8 @@
                         <li class="nav-item">
                            <a class="nav-link" href="shop.html">Cliente</a>
                         </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="shop.html">Emprendedor</a>
+                        <li class="nav-item d_none">
+                           <a class="nav-link" href="registro.php">Emprendedor</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="shop.html">Catalago</a>

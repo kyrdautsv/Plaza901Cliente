@@ -25,12 +25,21 @@
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-        media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-layout {
+            flex: 1;
+        }
+
         .register {
             background-color: #ffffff;
             padding: 20px;
@@ -38,27 +47,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             width: 100%;
-            margin: 0 auto;
-            /* Centra horizontalmente */
+            margin: 20px auto; /* Added margin to avoid overlap with the footer */
             display: flex;
             justify-content: center;
-            /* Centra horizontalmente */
         }
 
         .main_form {
             width: 100%;
-            /* Asegura que el formulario ocupe todo el ancho del contenedor */
         }
 
         .main_form {
             margin: 0 auto;
-            /* Centra horizontalmente */
             max-width: 600px;
-            /* Ajusta el ancho máximo */
             width: 200%;
-            /* Asegura que el formulario ocupe todo el ancho disponible */
             padding: 20px;
-            /* Ajusta el relleno para que el formulario se vea más ancho */
         }
 
         .modal-dialog-centered {
@@ -67,9 +69,17 @@
             justify-content: center;
             height: 100vh;
         }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
     </style>
 </head>
-<!-- body -->
 
 <body class="main-layout position_head">
     <!-- loader  -->
@@ -79,61 +89,7 @@
     <!-- end loader -->
     <!-- header -->
     <header>
-        <!-- header inner -->
-        <div class="header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                        <div class="full">
-                            <div class="center-desk">
-                                <div class="logo">
-                                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarsExample04">
-                                <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item ">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="glasses.html">Our Glasses</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="shop.html">Shop</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact Us</a>
-                                    </li>
-                                    <li class="nav-item d_none login_btn">
-                                        <a class="nav-link" href="#">Login</a>
-                                    </li>
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="registro.html">Registro</a>
-                                    </li>
-                                    <li class="nav-item d_none sea_icon">
-                                        <a class="nav-link" href="#"><i class="fa fa-shopping-bag"
-                                                aria-hidden="true"></i><i class="fa fa-search"
-                                                aria-hidden="true"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include 'nav.php'; ?>
     </header>
     <!-- end header inner -->
     <!-- end header -->
@@ -144,15 +100,14 @@
                 <div class="col-md-6">
                     <form id="request" class="main_form" onsubmit="showModal(event)">
                         <div class="row">
-                            <div class="col-md-12 ">
+                            <div class="col-md-12">
                                 <h3>Registro De Emprendedor</h3>
                             </div>
-                            <div class="col-md-12 ">
+                            <div class="col-md-12">
                                 <input class="registro" placeholder="Nombre del Negocio" type="text" name="Name">
                             </div>
                             <div class="col-md-12">
-                                <input class="registro" placeholder="Numero de Teléfono" type="text"
-                                    name="Phone Number">
+                                <input class="registro" placeholder="Numero de Teléfono" type="text" name="Phone Number">
                             </div>
                             <div class="col-md-12">
                                 <input class="registro" placeholder="Descripción" type="text" name="Descripcion">
@@ -171,8 +126,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -201,8 +155,7 @@
                         <ul class="location_icon">
                             <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Location</li>
                             <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +01 1234567890</li>
-                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com
-                            </li>
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -211,8 +164,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html
-                                    Templates</a></p>
+                            <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
                         </div>
                     </div>
                 </div>
