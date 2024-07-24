@@ -34,10 +34,14 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            margin: 0;
         }
 
         .main-layout {
             flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .register {
@@ -56,11 +60,19 @@
             width: 100%;
         }
 
-        .main_form {
+        .registro {
             margin: 0 auto;
             max-width: 600px;
-            width: 200%;
+            width: 100%;
             padding: 20px;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+            background-color: transparent;
+            color: #007bff;
+        }
+
+        .registro::placeholder {
+            color: #007bff;
         }
 
         .modal-dialog-centered {
@@ -69,6 +81,7 @@
             justify-content: center;
             height: 100vh;
         }
+
 
         footer {
             background-color: #f1f1f1;
@@ -94,7 +107,7 @@
     <!-- end header inner -->
     <!-- end header -->
     <!-- register section -->
-    <div id="register" class="register">
+    <div id="registro" class="registro">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
