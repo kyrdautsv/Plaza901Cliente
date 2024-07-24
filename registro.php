@@ -66,7 +66,7 @@
 
         .registro input[type="text"] {
             background-color: #ffffff;
-            border: 2px solid #007bff;
+            border: 2px solid #ffffff;
             padding: 10px;
             width: 100%;
             border-radius: 5px;
