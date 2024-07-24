@@ -66,7 +66,7 @@
 
         .registro input[type="text"] {
             background-color: #ffffff;
-            border: 2px solid #ffffff;
+            border: 2px solid #007bff;
             padding: 10px;
             width: 100%;
             border-radius: 5px;
@@ -156,6 +156,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="successModalLabel">Registro Exitoso</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria
+
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
