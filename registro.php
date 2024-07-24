@@ -40,6 +40,14 @@
             flex: 1;
         }
 
+        .registro-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            margin-top: 80px; /* Adjust this value to prevent overlapping with the menu */
+        }
+
         .registro {
             display: flex;
             justify-content: center;
@@ -48,20 +56,12 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+            max-width: 400px;
             width: 100%;
-            margin: 20px auto; /* Added margin to avoid overlap with the footer */
         }
 
         .main_form {
             width: 100%;
-        }
-
-        .registro {
-            margin: 0 auto;
-            max-width: 600px;
-            width: 100%;
-            padding: 20px;
         }
 
         .registro input[type="text"] {
@@ -85,6 +85,7 @@
             margin-top: 10px;
             cursor: pointer;
             border-radius: 5px;
+            width: auto; /* Added to adjust button width */
         }
 
         .modal-dialog-centered {
@@ -101,6 +102,7 @@
             width: 100%;
             position: relative;
             bottom: 0;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -118,34 +120,30 @@
     <!-- end header inner -->
     <!-- end header -->
     <!-- register section -->
-    <div id="registro" class="registro">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <form id="request" class="main_form" onsubmit="showModal(event)">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3>Registro De Emprendedor</h3>
-                            </div>
-                            <div class="col-md-12">
-                                <input class="registro" placeholder="Nombre del Negocio" type="text" name="Name">
-                            </div>
-                            <div class="col-md-12">
-                                <input class="registro" placeholder="Numero de Teléfono" type="text" name="Phone Number">
-                            </div>
-                            <div class="col-md-12">
-                                <input class="registro" placeholder="Descripción" type="text" name="Descripcion">
-                            </div>
-                            <div class="col-md-12">
-                                <input class="registro" placeholder="Ubicación" type="text" name="Ubicacion">
-                            </div>
-                            <div class="col-md-12">
-                                <button class="send_btn" type="submit">Registrar</button>
-                            </div>
-                        </div>
-                    </form>
+    <div class="registro-container">
+        <div id="registro" class="registro"  >
+            <form id="request" class="main_form" onsubmit="showModal(event)">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Registro De Emprendedor</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <input class="registro" placeholder="Nombre del Negocio" type="text" name="Name">
+                    </div>
+                    <div class="col-md-12">
+                        <input class="registro" placeholder="Numero de Teléfono" type="text" name="Phone Number">
+                    </div>
+                    <div class="col-md-12">
+                        <input class="registro" placeholder="Descripción" type="text" name="Descripcion">
+                    </div>
+                    <div class="col-md-12">
+                        <input class="registro" placeholder="Ubicación" type="text" name="Ubicacion">
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button class="send_btn" type="submit">Registrar</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -156,8 +154,6 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="successModalLabel">Registro Exitoso</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria
-
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -171,7 +167,6 @@
         </div>
     </div>
 
-    <!-- end register section -->
     <!-- footer -->
     <footer>
         <div class="footer">
