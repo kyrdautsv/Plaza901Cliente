@@ -104,8 +104,7 @@
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
                      <h2>Catalogo de Zapatos</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor
-                        e et dolore magna aliqua. Ut enim ad minim veniam, qui
+                     <p>¡Los mejores del mercado!
                      </p>
                   </div>
                </div>
