@@ -49,6 +49,9 @@
                         <li class="nav-item d_none">
                            <a class="nav-link" href="register.php">Register</a>
                         </li>
+                        <li class="nav-item d_none">
+                           <a class="nav-link" href="planes.php">Suscripcion</a>
+                        </li>
                         <li class="nav-item d_none sea_icon">
                            <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
                         </li>
