@@ -36,7 +36,7 @@
                            <a class="nav-link" href="shop.html">Cliente</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="shop.html">Emprendedor</a>
+                           <a class="nav-link" href="registro.php">Emprendedor</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="shop.html">Catalago</a>
