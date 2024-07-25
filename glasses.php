@@ -118,7 +118,7 @@
                      <figure><img src="images/zapato 1.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>220</h3>
                      <p>zapatos de niños</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -126,7 +126,7 @@
                      <figure><img src="images/zapato 2.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>250</h3>
                      <p>Ternero Marron Oscuro</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -134,7 +134,7 @@
                      <figure><img src="images/zapato 3.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>300</h3>
                      <p>Zapatillas Metalicas</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -142,7 +142,7 @@
                      <figure><img src="images/zapato 4.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>150</h3>
                      <p>Coleccion otoño</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -150,7 +150,7 @@
                      <figure><img src="images/zapato 5.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>450</h3>
                      <p>Zapatos de Mujer</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -158,7 +158,7 @@
                      <figure><img src="images/zapato 6.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>500</h3>
                      <p>Sandalias Deslizantes</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -166,7 +166,7 @@
                      <figure><img src="images/zapato 7.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>600</h3>
                      <p>Zapatos de Vestir</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -174,7 +174,7 @@
                      <figure><img src="images/zapato 8.jpg" alt="#"/></figure>
                      <h3><span class="blu">$</span>330</h3>
                      <p>Tenis de Hombre</p>
-                     <a class="read_more" href="detalles.html">Ver Detalles</a>
+                     <a class="read_more" href="detalles.php">Ver Detalles</a>
                   </div>
                </div>
                <div class="col-md-12">
