@@ -36,76 +36,45 @@
             min-height: 100vh;
         }
 
-        .main-layout {
+        .content {
             flex: 1;
-        }
-
-        .registro-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 1;
-            margin-top: 80px; /* Adjust this value to prevent overlapping with the menu */
         }
 
         .registro {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: #ffffff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
+            box-shadow: 0 0 10px #ffffff;
+            max-width: 500px;
             width: 100%;
+            margin: 0 auto;
+            /* Centra horizontalmente */
+            display: flex;
+            justify-content: center;
+            /* Centra horizontalmente */
         }
+        
 
         .main_form {
             width: 100%;
+            /* Asegura que el formulario ocupe todo el ancho del contenedor */
         }
 
-        .registro input[type="text"] {
-            background-color: #ffffff;
-            border: 2px solid #007bff;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            margin-bottom: 15px;
+        .main_form {
+            margin: 0 auto;
+            /* Centra horizontalmente */
+            max-width: 600px;
+            /* Ajusta el ancho máximo */
+            width: 200%;
+            /* Asegura que el formulario ocupe todo el ancho disponible */
+            padding: 20px;
+            /* Ajusta el relleno para que el formulario se vea más ancho */
         }
 
-        .send_btn {
-            background-color: #007bff;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin-top: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            width: auto; /* Added to adjust button width */
-        }
 
-        .modal-dialog-centered {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        footer {
-            background-color: #f1f1f1;
-            padding: 20px 0;
-            text-align: center;
-            width: 100%;
-            position: relative;
-            bottom: 0;
-            margin-top: auto;
-        }
     </style>
 </head>
+<!-- body -->
 
 <body class="main-layout position_head">
     <!-- loader  -->
@@ -120,35 +89,41 @@
     <!-- end header inner -->
     <!-- end header -->
     <!-- register section -->
-    <div class="registro-container">
-        <div id="registro" class="registro"  >
-            <form id="request" class="main_form" onsubmit="showModal(event)">
+    <div class="content">
+        <div id="registro" class="registro">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h3>Registro De Emprendedor</h3>
-                    </div>
-                    <div class="col-md-12">
-                        <input class="registro" placeholder="Nombre del Negocio" type="text" name="Name">
-                    </div>
-                    <div class="col-md-12">
-                        <input class="registro" placeholder="Numero de Teléfono" type="text" name="Phone Number">
-                    </div>
-                    <div class="col-md-12">
-                        <input class="registro" placeholder="Descripción" type="text" name="Descripcion">
-                    </div>
-                    <div class="col-md-12">
-                        <input class="registro" placeholder="Ubicación" type="text" name="Ubicacion">
-                    </div>
-                    <div class="col-md-12 text-center">
-                        <button class="send_btn" type="submit">Registrar</button>
+                    <div class="col-md-6">
+                    <form id="request" class="main_form" onsubmit="showModal(event)">
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <h3>Registro De Emprendedor</h3>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <input class="registro" placeholder="Nombre del Negocio" type="type" name="Name">
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="registro" placeholder="Numero de Teléfono" type="type" name="Phone Number">
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="registro" placeholder="Descripción" type="type" name="Descripcion">
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="registro" placeholder="Ubicación" type="type" name="Ubicacion">
+                                </div>
+                                <div class="col-md-12">
+                                <button class="send_btn" type="submit">Registrar</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <!-- end register section -->
+        <!-- Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -166,27 +141,24 @@
             </div>
         </div>
     </div>
-
     <!-- footer -->
-    <footer>
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <ul class="location_icon">
-                            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Location</li>
-                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +01 1234567890</li>
-                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com</li>
-                        </ul>
-                    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Location</li>
+                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +01 1234567890</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com</li>
+                    </ul>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
-                        </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
                     </div>
                 </div>
             </div>
@@ -201,7 +173,6 @@
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
-
     <script>
         function showModal(event) {
             event.preventDefault(); // Prevenir el envío del formulario
@@ -216,7 +187,6 @@
             $('#successModal').modal('show');
         }
     </script>
-
 </body>
 
 </html>
