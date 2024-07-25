@@ -25,18 +25,10 @@
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
    <!-- Tweaks for older IEs-->
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<<<<<<< HEAD
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    <!--[if lt IE 9]>
    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-=======
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen">
-   <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
->>>>>>> 614be8ea6de2a376c71bde5aed82c02958e2a261
 </head>
 <!-- body -->
 
@@ -52,31 +44,19 @@
       include 'nav.php';
       ?>
    </header>
-<<<<<<< HEAD
-   <!-- end he
-   <!-- end header inner -->
-   <!-- end header -->
-   <!-- Our Glasses section -->
-=======
    <!-- end header inner -->
    <!-- end header -->
    <!-- end header -->
    <!-- Our  Glasses section -->
->>>>>>> 614be8ea6de2a376c71bde5aed82c02958e2a261
    <div class="glasses">
       <div class="container">
          <div class="row">
             <div class="col-md-10 offset-md-1">
                <div class="titlepage">
-<<<<<<< HEAD
-                  <h2>Our Glasses</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-=======
                   <h2>Catalogo de Zapatos</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor
                      e et dolore magna aliqua. Ut enim ad minim veniam, qui
                   </p>
->>>>>>> 614be8ea6de2a376c71bde5aed82c02958e2a261
                </div>
             </div>
          </div>
@@ -85,62 +65,30 @@
          <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                <div class="glasses_box">
-<<<<<<< HEAD
-                  <figure><img src="images/glass1.png" alt="#" /></figure>
-                  <h3><span class="blu">$</span>50</h3>
-                  <p>Sunglasses</p>
-                  <a class="btn btn-primary" href="detalleProducto.html?id=1">Ver Detalles</a>
-=======
                   <figure><img src="images/zapato 1.jpg" alt="#" /></figure>
                   <h3><span class="blu">$</span>220</h3>
                   <p>zapatos de niños</p>
                   <a class="read_more" href="detalles.html">Ver Detalles</a>
->>>>>>> 614be8ea6de2a376c71bde5aed82c02958e2a261
                </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                <div class="glasses_box">
-<<<<<<< HEAD
-                  <figure><img src="images/glass2.png" alt="#" /></figure>
-                  <h3><span class="blu">$</span>50</h3>
-                  <p>Sunglasses</p>
-                  <a class="btn btn-primary" href="detalleProducto.html?id=2">Ver Detalles</a>
-=======
                   <figure><img src="images/zapato 2.jpg" alt="#" /></figure>
                   <h3><span class="blu">$</span>250</h3>
                   <p>Ternero Marron Oscuro</p>
                   <a class="read_more" href="detalles.html">Ver Detalles</a>
->>>>>>> 614be8ea6de2a376c71bde5aed82c02958e2a261
                </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                <div class="glasses_box">
-<<<<<<< HEAD
-                  <figure><img src="images/glass3.png" alt="#" /></figure>
-                  <h3><span class="blu">$</span>50</h3>
-                  <p>Sunglasses</p>
-                  <a class="btn btn-primary" href="detalleProducto.html?id=3">Ver Detalles</a>
-=======
                   <figure><img src="images/zapato 3.jpg" alt="#" /></figure>
                   <h3><span class="blu">$</span>300</h3>
                   <p>Zapatillas Metalicas</p>
                   <a class="read_more" href="detalles.html">Ver Detalles</a>
->>>>>>> 614be8ea6de2a376c71bde5aed82c02958e2a261
                </div>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                <div class="glasses_box">
-<<<<<<< HEAD
-                  <figure><img src="images/glass4.png" alt="#" /></figure>
-                  <h3><span class="blu">$</span>50</h3>
-                  <p>Sunglasses</p>
-                  <a class="btn btn-primary" href="detalleProducto.html?id=4">Ver Detalles</a>
-               </div>
-            </div>
-            <!-- Añade más productos según sea necesario -->
-            <div class="col-md-12">
-               <a class="read_more" href="#">Read More</a>
-=======
                   <figure><img src="images/zapato 4.jpg" alt="#" /></figure>
                   <h3><span class="blu">$</span>150</h3>
                   <p>Coleccion otoño</p>
@@ -181,7 +129,6 @@
             </div>
             <div class="col-md-12">
                <a class="read_more" href="#">Home</a>
->>>>>>> 614be8ea6de2a376c71bde5aed82c02958e2a261
             </div>
          </div>
       </div>
