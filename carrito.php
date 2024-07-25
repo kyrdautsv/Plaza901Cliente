@@ -79,7 +79,7 @@
    </footer>
    <script src="js/jquery.min.js"></script>
    <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
          let cart = JSON.parse(localStorage.getItem('cart')) || [];
          let cartItemsContainer = $('#cartItems');
          let totalAmountContainer = $('#totalAmount');
@@ -94,7 +94,7 @@
             if (cart.length === 0) {
                cartItemsContainer.html('<p>El carrito está vacío</p>');
             } else {
-               cart.forEach(function (item, index) {
+               cart.forEach(function(item, index) {
                   cartItemsContainer.append(`
                      <div class="col-md-4">
                         <div class="cart-item" data-index="${index}">
@@ -115,14 +115,14 @@
 
          updateCartDisplay();
 
-         $(document).on('click', '.remove-item', function () {
+         $(document).on('click', '.remove-item', function() {
             let indexToRemove = $(this).closest('.cart-item').data('index');
             cart.splice(indexToRemove, 1);
             localStorage.setItem('cart', JSON.stringify(cart));
             updateCartDisplay();
          });
 
-         $(document).on('change', '.quantity', function () {
+         $(document).on('change', '.quantity', function() {
             let index = $(this).data('index');
             let newQuantity = parseInt($(this).val());
             if (newQuantity < 1) {
@@ -134,7 +134,7 @@
             updateCartDisplay();
          });
 
-         $('#payButton').click(function () {
+         $('#payButton').click(function() {
             let soldProducts = JSON.parse(localStorage.getItem('soldProducts')) || [];
             soldProducts = soldProducts.concat(cart);
             localStorage.setItem('soldProducts', JSON.stringify(soldProducts));
@@ -142,7 +142,7 @@
             localStorage.setItem('cart', JSON.stringify(cart));
             alert('Compra realizada con éxito. ¡Gracias!');
             updateCartDisplay();
-            window.location.href = 'productos_vendidos.html';
+            window.location.href = 'index.php';
          });
       });
    </script>

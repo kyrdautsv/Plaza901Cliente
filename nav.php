@@ -26,7 +26,7 @@
                            <a class="nav-link" href="about.php">Acerca De</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="glasses.html">Carrito</a>
+                           <a class="nav-link" href="glasses.html">productos prueba</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="shop.html">Cliente</a>
