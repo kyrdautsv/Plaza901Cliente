@@ -39,7 +39,7 @@
                            <a class="nav-link" href="shop.html">Emprendedor</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="shop.html">Catalago</a>
+                           <a class="nav-link" href="glasses.php">Catalago</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="contact.php">Contactanos</a>
