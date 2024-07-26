@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+   <header>
+        <?php
+        include 'nav.php';
+        ?>
+    </header>
    <head>
       <!-- basic -->
       <meta charset="utf-8">
@@ -29,6 +34,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
+
    <!-- body -->
    <body class="main-layout position_head">
       <!-- loader  -->

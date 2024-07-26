@@ -42,6 +42,7 @@
         include 'nav.php';
         ?>
     </header>
+    <!-- end header -->
     <!-- end header inner -->
     <!-- end header -->
     <!-- banner -->
