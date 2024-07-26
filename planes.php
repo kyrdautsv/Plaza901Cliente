@@ -44,6 +44,7 @@
    <?php
         include 'nav.php';
         ?>
+        </header>
       <!-- header inner -->
       <div class="header">
          <div class="container-fluid">
@@ -99,7 +100,7 @@
             </div>
          </div>
       </div>
-   </header>
+   
    <!-- end header inner -->
    <!-- end header -->
    <!-- Our  Glasses section -->
