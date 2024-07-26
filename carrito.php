@@ -50,7 +50,7 @@
       <div class="row" id="cartItems"></div>
       <div id="totalAmount" class="mt-3"></div>
       <div class="text-center">
-         <button id="payButton" class="btn btn-primary btn-lg">Pagar</button>
+         <a id="payButton" class="btn btn-primary btn-lg" href="generacion_pago.php">Pagar</a>
       </div>
    </div>
    <footer>
@@ -134,18 +134,19 @@
             updateCartDisplay();
          });
 
-         $('#payButton').click(function() {
-            let soldProducts = JSON.parse(localStorage.getItem('soldProducts')) || [];
-            soldProducts = soldProducts.concat(cart);
-            localStorage.setItem('soldProducts', JSON.stringify(soldProducts));
-            cart = [];
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert('Compra realizada con éxito. ¡Gracias!');
-            updateCartDisplay();
-            window.location.href = 'index.php';
-         });
-      });
+
    </script>
+   // $('#payButton').click(function() {
+   //          let soldProducts = JSON.parse(localStorage.getItem('soldProducts')) || [];
+   //          soldProducts = soldProducts.concat(cart);
+   //          localStorage.setItem('soldProducts', JSON.stringify(soldProducts));
+   //          cart = [];
+   //          localStorage.setItem('cart', JSON.stringify(cart));
+   //          alert('Compra realizada con éxito. ¡Gracias!');
+   //          updateCartDisplay();
+   //          window.location.href = 'index.php';
+   //       });
+   //    });
 </body>
 
 </html>
