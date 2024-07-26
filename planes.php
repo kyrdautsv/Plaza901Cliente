@@ -41,6 +41,10 @@
    <!-- end loader -->
    <!-- header -->
    <header>
+   <?php
+        include 'nav.php';
+        ?>
+        </header>
       <!-- header inner -->
       <div class="header">
          <div class="container-fluid">
@@ -84,7 +88,7 @@
                               <a class="nav-link" href="#">Register</a>
                            </li>
                            <li class="nav-item d_none">
-                              <a class="nav-link" href="planes.html">Planes</a>
+                              <a class="nav-link" href="planes.php">Planes</a>
                            </li>
                            <!-- <li class="nav-item d_none sea_icon">
                               <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -96,7 +100,7 @@
             </div>
          </div>
       </div>
-   </header>
+   
    <!-- end header inner -->
    <!-- end header -->
    <!-- Our  Glasses section -->
