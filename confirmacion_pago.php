@@ -27,6 +27,92 @@
       .cart-item p {
          margin: 10px 0;
       }
+      
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #343a40;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+        input[type="text"], input[type="number"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #343a40;
+        }
+        p {
+            color: #343a40;
+        }
+        .btn {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
    </style>
 </head>
 
@@ -37,21 +123,25 @@
       ?>
    </header>
 
-   <div class="container mt-5" style="padding-top: 10%;">
+   <div class="container mt-5" >
       <div class="container">
          <div class="row">
-            <div class="col-md-10 offset-md-1">
+            <!-- <div class="col-md-10 offset-md-1">
                <div class="titlepage">
-                  <h2>Carrito de Compras</h2>
-               </div>
+                  <h2>Carrito de Compras</h2> 
+               </div> -->
             </div>
          </div>
       </div>
-      <div class="row" id="cartItems"></div>
-      <div id="totalAmount" class="mt-3"></div>
-      <div class="text-center">
-         <a id="payButton" class="btn btn-primary btn-lg" href="generacion_pago.php">Pagar</a>
-      </div>
+
+      
+    <div class="container">
+        <h2>Pago Realizado</h2>
+        <p>¡Gracias por tu compra! Tu pago ha sido procesado con éxito.</p>
+        <button class="btn" onclick="window.location.href='carrito.php'">Volver al Carrito</button>
+        <button class="btn" onclick="window.location.href='pdf/avance_pedido_comprovante.php'">Generar Tiket</button>
+    </div>
+
    </div>
    <footer>
       <div class="footer">
@@ -138,3 +228,7 @@
 </body>
 
 </html>
+
+
+
+
